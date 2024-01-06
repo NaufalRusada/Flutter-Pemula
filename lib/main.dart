@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_pemula/expandedandflexible.dart';
+import 'package:flutter_pemula/navigation.dart';
+import 'package:flutter_pemula/menampilkandaftarwisata.dart';
+
 
 
 void main() {
@@ -13,55 +16,55 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Wisata Kudus",
       theme: ThemeData(),
-      home: ExpandAndFlexible(),
+      home: ListDaftarWisata(),
     );
   }
 }
 
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('First Screen'),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(
-                Icons.search,
-                color: Colors.white,
-              ),
-              onPressed: () {},
-            ),
-          ],
-          leading: IconButton(
-            icon: Icon(
-              Icons.menu,
-              color: Colors.white,
-            ),
-            onPressed: () {},
-          ),
-        ),
-        body: Container(
-            color: Colors.red,
-            margin: EdgeInsets.all(10.0),
-            child: Center(
-                child: Container(
-                  color: Colors.yellow,
-                  width: 200,
-                  height: 100,
-                  child: Text(
-                    "HEllo World",
-                    style: TextStyle(fontSize: 30),
-                  ),
-                ))),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add),
-          onPressed: () {},
-        ));
-  }
-}
+// class FirstScreen extends StatelessWidget {
+//   const FirstScreen({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text('First Screen'),
+//           actions: <Widget>[
+//             IconButton(
+//               icon: Icon(
+//                 Icons.search,
+//                 color: Colors.white,
+//               ),
+//               onPressed: () {},
+//             ),
+//           ],
+//           leading: IconButton(
+//             icon: Icon(
+//               Icons.menu,
+//               color: Colors.white,
+//             ),
+//             onPressed: () {},
+//           ),
+//         ),
+//         body: Container(
+//             color: Colors.red,
+//             margin: EdgeInsets.all(10.0),
+//             child: Center(
+//                 child: Container(
+//                   color: Colors.yellow,
+//                   width: 200,
+//                   height: 100,
+//                   child: Text(
+//                     "HEllo World",
+//                     style: TextStyle(fontSize: 30),
+//                   ),
+//                 ))),
+//         floatingActionButton: FloatingActionButton(
+//           child: Icon(Icons.add),
+//           onPressed: () {},
+//         ));
+//   }
+// }
 
 class Heading extends StatelessWidget {
   final String text;
